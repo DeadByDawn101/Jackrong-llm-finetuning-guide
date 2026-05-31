@@ -43,6 +43,23 @@
 | ⚡ **효율적인 리소스 엔지니어링** | Unsloth 및 4-bit 양자화 도구를 활용하여 단일 GPU(예: 기본 Google Colab)의 한계 내에서 대규모 학습 실행. |
 | 📦 **엔드투엔드 배포** | 다중 소스 데이터의 정규화부터 LoRA 어댑터 적용, 16-bit 병합형 배포, 로컬 구동을 위한 GGUF 양자화 아웃풋까지. |
 
+## 🧭 시작하기
+
+| 목표 | 항목 |
+| :--- | :--- |
+| Codex Goal mode로 Qwopus 27B RL 워크플로우 자동화 | [편집 가능한 RL Goal 템플릿 열기](../codex-goals/qwopus27b-rl-training/) |
+| Codex로 Qwen MTP GGUF 릴리스 변환 및 양자화 | [MTP GGUF Goal 템플릿 열기](../codex-goals/qwen-mtp-gguf-release/) |
+
+## 🗂️ 리포지토리 맵
+
+| 영역 | 설명 | 링크 |
+| :--- | :--- | :--- |
+| 🤖 Codex Goal Templates | RL training, MTP GGUF conversion, repository maintenance를 위한 편집 가능한 Codex workflow | [열기](../codex-goals/) |
+| ⚙️ Qwen MTP GGUF | 표준 변환 스크립트, preflight checks, smoke tests, release documentation | [열기](../qwen-mtp-gguf/) |
+| 📓 Training Notebooks | 브라우저에서 실행할 수 있는 SFT 및 RL 튜토리얼 notebooks | [열기](../train_code/) |
+| 📚 High-Fidelity Datasets | training guides에서 사용하는 curated dataset folders | [열기](../High-fidelity%20Dataset/) |
+| 📖 PDF Guides | beginner-facing guides와 technical reports | [열기](../guidePDF/) |
+
 ---
 
 ## 💡 제작자의 메시지
@@ -90,7 +107,7 @@
 | **Qwopus3.5 (27B)** | SFT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwopus3-5-27b-Colab.ipynb) |
 | **Qwen3.5 (9B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwen3.5-9B-Neo-Kaggle.ipynb) |
 | **Qwopus3.5 (35B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwopus-3.5-35B-A3B-Kaggle.ipynb) |
-| **Llama3.2-R1 (3B)** | RL (GPRO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
+| **Llama3.2-R1 (3B)** | RL (GRPO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
 
 ---
 

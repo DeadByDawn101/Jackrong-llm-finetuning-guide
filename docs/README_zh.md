@@ -43,6 +43,23 @@
 | ⚡ **资源高效型工程** | 利用 Unsloth 等工具和 4-bit 量化技术，在单卡资源（如标准 Google Colab）限制下运行大规模训练。 |
 | 📦 **端到端交付** | 从多源数据归一化到 LoRA 适配，合并导出 16-bit 模型，以及用于本地部署的 GGUF 量化。 |
 
+## 🧭 从这里开始
+
+| 目标 | 入口 |
+| :--- | :--- |
+| 使用 Codex Goal mode 自动化 Qwopus 27B RL 工作流 | [打开可编辑 RL Goal 模板](../codex-goals/qwopus27b-rl-training/) |
+| 使用 Codex 转换并量化 Qwen MTP GGUF 版本 | [打开 MTP GGUF Goal 模板](../codex-goals/qwen-mtp-gguf-release/) |
+
+## 🗂️ 仓库地图
+
+| 区域 | 描述 | 链接 |
+| :--- | :--- | :--- |
+| 🤖 Codex Goal Templates | 用于 RL 训练、MTP GGUF 转换和仓库维护的可编辑 Codex 工作流 | [打开](../codex-goals/) |
+| ⚙️ Qwen MTP GGUF | 规范转换脚本、预检、smoke test 与发布文档 | [打开](../qwen-mtp-gguf/) |
+| 📓 训练笔记本 | 可在浏览器中运行的 SFT 与 RL 教学笔记本 | [打开](../train_code/) |
+| 📚 高保真数据集 | 训练指南中使用的精选数据集目录 | [打开](../High-fidelity%20Dataset/) |
+| 📖 PDF 指南 | 面向初学者的指南和技术报告 | [打开](../guidePDF/) |
+
 ---
 
 ## 💡 给建设者的一封信
@@ -90,7 +107,7 @@
 | **Qwopus3.5 (27B)** | SFT | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwopus3-5-27b-Colab.ipynb) |
 | **Qwen3.5 (9B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwen3.5-9B-Neo-Kaggle.ipynb) |
 | **Qwopus3.5 (35B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwopus-3.5-35B-A3B-Kaggle.ipynb) |
-| **Llama3.2-R1 (3B)** | RL (GPRO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
+| **Llama3.2-R1 (3B)** | RL (GRPO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
 
 ---
 

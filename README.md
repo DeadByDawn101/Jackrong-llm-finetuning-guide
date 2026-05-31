@@ -43,6 +43,23 @@ This repository is designed as a **"Zero to One"** learning platform. Whether yo
 | ⚡ **Resource-Efficient Engineering** | Leveraging tools like Unsloth and 4-bit quantization to run large-scale training within single-GPU constraints (e.g., standard Google Colab). |
 | 📦 **End-to-End Delivery** | From multi-source data normalization to LoRA adaptation, merged 16-bit exports, and GGUF quantization for local deployment. |
 
+## 🧭 Start Here
+
+| Goal | Entry |
+| :--- | :--- |
+| Automate a Qwopus 27B RL workflow with Codex Goal mode | [Open the editable RL Goal template](./codex-goals/qwopus27b-rl-training/) |
+| Convert and quantize a Qwen MTP GGUF release with Codex | [Open the MTP GGUF Goal template](./codex-goals/qwen-mtp-gguf-release/) |
+
+## 🗂️ Repository Map
+
+| Area | Description | Link |
+| :--- | :--- | :--- |
+| 🤖 Codex Goal Templates | Editable Codex workflows for RL training, MTP GGUF conversion, and repository maintenance | [Open](./codex-goals/) |
+| ⚙️ Qwen MTP GGUF | Canonical conversion scripts, preflight checks, smoke tests, and release documentation | [Open](./qwen-mtp-gguf/) |
+| 📓 Training Notebooks | Browser-ready SFT and RL tutorial notebooks | [Open](./train_code/) |
+| 📚 High-Fidelity Datasets | Curated dataset folders used across the training guides | [Open](./High-fidelity%20Dataset/) |
+| 📖 PDF Guides | Beginner-facing guides and technical reports | [Open](./guidePDF/) |
+
 ---
 
 ## 💡 A Message to Builders
@@ -92,7 +109,7 @@ Below are the interactive Kaggle and Colab notebooks, organized by model archite
 | **Qwopus3.6 (27B)** | GSPO | [![Python Code](https://img.shields.io/badge/Code-Python-3776AB?style=flat-square&logo=python&logoColor=white)](train_code/Qwopus3.6-27B-GSPO/qwopus3_6_27b_gspo_training.py) |
 | **Qwen3.5 (9B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwen3.5-9B-Neo-Kaggle.ipynb) |
 | **Qwopus3.5 (35B)** | SFT | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Qwopus-3.5-35B-A3B-Kaggle.ipynb) |
-| **Llama3.2-R1 (3B)** | RL (GPRO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
+| **Llama3.2-R1 (3B)** | RL (GRPO) | [![Open In Kaggle](https://kaggle.com/static/images/open-in-kaggle.svg)](https://kaggle.com/kernels/welcome?src=https://github.com/R6410418/Jackrong-llm-finetuning-guide/blob/main/train_code/Llama-3.2-3B-R1-Zero-GRPO.ipynb) |
 
 ---
 
