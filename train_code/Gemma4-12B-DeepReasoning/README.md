@@ -114,3 +114,41 @@ bash train_gemma4.sh
 ## Contributors
 
 Built by [@DeadByDawn101](https://github.com/DeadByDawn101) / RavenX LLC + Claude (Anthropic)
+
+---
+
+## GGUF Conversion Fix (Gemma 4 Tokenizer Patch)
+
+Every GGUF converter crashes on Gemma 4 because `extra_special_tokens` is a **list** but the code expects a **dict**.
+
+### The One-Line Fix
+
+```python
+import json
+tc = json.load(open("your-model/tokenizer_config.json"))
+est = tc.get("extra_special_tokens", [])
+if isinstance(est, list):
+    tc["extra_special_tokens"] = {t: t for t in est} if est else {}
+    json.dump(tc, open("your-model/tokenizer_config.json", "w"), indent=2)
+```
+
+### GGUF Conversion Steps (Isolated venv)
+
+```bash
+# Must use venv — llama.cpp deps conflict with mlx-lm
+python3 -m venv /tmp/gguf-env
+source /tmp/gguf-env/bin/activate
+git clone --depth 1 https://github.com/ggerganov/llama.cpp.git /tmp/llama.cpp
+pip install -r /tmp/llama.cpp/requirements.txt
+
+# Patch tokenizer, flip config, convert
+python3 /tmp/llama.cpp/convert_hf_to_gguf.py \
+  your-model --outfile model.gguf --outtype f16
+
+deactivate  # Back to system python for mlx-lm
+```
+
+Without this patch you get:
+```
+AttributeError: 'list' object has no attribute 'keys'
+```
